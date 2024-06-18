@@ -1,0 +1,120 @@
+.hero{
+    padding: 20px 0px;
+    background-color:#F2F2F2;
+    width: 100%;
+    height: auto;
+    &__right{
+        display: flex;
+        flex-direction: column;
+        .card{
+            border: none;
+        }
+        gap: 10px;
+        img{
+            width: 340px;
+        }
+    }
+}
+.container2{
+    width: 85%;
+    margin: auto;
+    max-width: 1440px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    .left{
+        background-color: white;
+        margin: 0px 60px;
+        display: flex;
+        align-items: center;
+        h2{
+            width: 400px;
+            font-size: 32px;
+            color: #1F1D14;
+            font-weight: 800;
+        }
+        button{
+          padding: 10px 25px;  
+          border-radius: 10px;
+          border: 2px solid yellow;
+        }
+    }
+    
+}
+@media (min-width:350px){
+    .hero{
+        &__right{
+            img{
+                width: auto;
+            }
+        }
+       .container2{
+        display: flex;
+        flex-direction: column;
+        .left{
+            margin: 0;
+            h2{
+                width: auto;
+                font-size: 20px;
+            }
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+        }
+       }
+    }
+}
+@media (min-width:950px){
+    .hero{
+        &__right{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            img{
+                width: auto;
+            }
+        }
+       .container2{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        .left{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            h2{
+                width: auto;
+                font-size: 20px;
+            }
+            img{
+                width: auto;
+            }
+        }
+       }
+    }
+}
+@media (min-width:1200px){
+    .hero{
+        .container2{
+           display: grid;
+           grid-template-columns: auto auto;
+        }
+        &__right{
+           display: flex;
+        
+           .card{
+            img{
+                height: 220px;
+            }
+           }  
+        }
+        .left{
+            padding: 0px 0px 0px 80px;
+           
+        }
+      
+    }
+}
+

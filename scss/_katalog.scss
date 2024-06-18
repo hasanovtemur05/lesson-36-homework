@@ -1,0 +1,91 @@
+.katolog{
+    height: auto;
+    display: grid;
+    margin: 30px 0px;
+    &__cards{
+        width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 24px;
+    }
+    &__card{
+        height: 247px;
+        border-radius: 10px;
+        padding: 25px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__title{
+            font-size: 20px;
+        }
+        
+    }
+    .card1{
+        background-color: #D3E5F2;
+    }
+    .card2{
+        background-color: #E2C6BE;
+    }
+    .card3{
+        background-color: #DADBE0;
+    }
+    .card4{
+        background-color: #E2EEC0;
+    }
+    .card5{
+        background-color: #C2BCE8;
+    }
+    .card6{
+        background-color: #ABA520;
+    }
+   
+}
+@media (min-width:300px){
+    .katolog{
+        &__cards{
+            display:grid ;
+            grid-template-columns: 1fr;
+        }
+        &__card{
+            height: auto;
+        }
+    }
+}
+@media (min-width:450px){
+    .katolog{
+        &__cards{
+            display:grid ;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__card{
+            height: auto;
+        }
+    }
+}
+@media (min-width:750px){
+    .katolog{
+        &__cards{
+            display:grid ;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+       
+    }
+}
+@media (min-width:1100px){
+    .katolog{
+        &__cards{
+            display:grid ;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+       
+    }
+}
+@media (min-width:1200px){
+    .katolog{
+        &__cards{
+            display:grid ;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+       
+    }
+}
